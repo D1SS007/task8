@@ -5,13 +5,11 @@ namespace task8
     class Program
     {
         static void Main(string[] args)
-        {
-            
+        {           
             int receptionTime = 10;
             int queueTime;
             int fullHours;
             int minutes;
-
 
             Console.WriteLine("Введите количество старушек ");          
 
@@ -23,15 +21,6 @@ namespace task8
             minutes = queueTime  % 60;
 
             Console.WriteLine("Время в очереди: " + fullHours + " часов, " + minutes + " минут " );
-
-
-
-
-
-
-
-
-
         }
     }
 }
