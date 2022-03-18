@@ -8,8 +8,9 @@ namespace task8
         {           
             int receptionTime = 10;
             int queueTime;
-            int fullHours;
-            int minutes;
+            int hoursInQueue;
+            int minutesInQueue;
+            int minutesInHour = 60;
 
             Console.WriteLine("Введите количество старушек ");          
 
@@ -17,8 +18,8 @@ namespace task8
 
             queueTime = receptionTime * amountOfPeople;
 
-            fullHours = queueTime / 60;
-            minutes = queueTime  % 60;
+            hoursInQueue = queueTime / minutesInHour;
+            minutesInQueue = queueTime  % minutesInHour;
 
             Console.WriteLine("Время в очереди: " + fullHours + " часов, " + minutes + " минут " );
         }
